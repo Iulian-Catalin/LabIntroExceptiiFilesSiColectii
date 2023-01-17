@@ -1,9 +1,6 @@
 package colectii;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class colectii {
     public static void main(String[] args) {
@@ -41,7 +38,12 @@ public class colectii {
         while(i.hasNext()) {
             String s = i.next();
             System.out.println(s);
-            i.remove();
+            //i.remove();
+        }
+
+        Set<String> noDub = new HashSet<>(list);
+        for(String sss : noDub){
+            System.out.println(sss);
         }
     }
 }
